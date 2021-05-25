@@ -1,0 +1,94 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-05-22 11:08:12
+ * @LastEditTime: 2021-05-25 21:35:41
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \03阶段_20天_JS函数与事件 预习内容c:\Users\admin\Desktop\wanxi 21-3-29\万息资料-开课\04阶段_28天_购物车预习内容\goodslist.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goodslist</title>
+  <link rel="stylesheet" href="./css/goodslist.css">
+  <link rel="stylesheet" href="./css/cartlist.css">
+  <script src="./js/myQuery.js"></script>
+  <script src="./js/goodsdata.js"></script>
+</head>
+
+<body>
+  <!-- 轮播图区域 -->
+  <div class="swiperarea">
+    <div class="swiperbox">
+      <div class="wrap" style="left:-600px;">
+        <img src="./images/swiper05.jpg" alt="">
+        <img src="./images/swiper01.jpg" alt="">
+        <img src="./images/swiper02.jpg" alt="">
+        <img src="./images/swiper03.jpg" alt="">
+        <img src="./images/swiper04.jpg" alt="">
+        <img src="./images/swiper05.jpg" alt="">
+        <img src="./images/swiper01.jpg" alt="">
+      </div>
+      <div class="buttons">
+        <span class="lidot">1</span>
+        <span class="lidot">2</span>
+        <span class="lidot">3</span>
+        <span class="lidot">4</span>
+        <span class="lidot">5</span>
+      </div>
+      <a href="javascript:;" class="arrow arrow_left">&lt;</a>
+      <a href="javascript:;" class="arrow arrow_right">&gt;</a>
+    </div>
+  </div>
+  <!-- 列表容器 -->
+  <div class="content"></div>
+  <!-- 分页区域 -->
+  <ul class="pagination">
+    <li id="asideli" class="aside-left">
+      <a href="#">
+        <span>上一页</span>
+      </a>
+    </li>
+    <li id="lipage"><a href="#">1</a></li>
+    <li id="lipage"><a href="#">2</a></li>
+    <li id="lipage"><a href="#">3</a></li>
+    <li id="lipage"><a href="#">4</a></li>
+    <li id="lipage"><a href="#">5</a></li>
+    <li id="asideli" class="aside-right">
+      <a href="#">
+        <span>下一页</span>
+      </a>
+    </li>
+    <li id="total">共&nbsp;<span id="totalp"></span>&nbsp;页</li>
+    <li id="topage">
+      <div>到第&nbsp;</div>
+      <input id="topageipt" type="text">
+      <div>&nbsp;页</div>
+    </li>
+    <li style="background-color: #ccc">
+      <a href="#">
+        <span id="sure">确定</span>
+      </a>
+    </li>
+  </ul>
+  <!-- 购物车区域 -->
+  <ul class="cartul"></ul>
+  <div class="bottom">
+    <div class="chooseall">
+      <input type="checkbox" checked class="botinput" /><span>全选</span>
+    </div>
+    <button class="delall">全部删除</button>
+    <div class="bottomright">
+      总数：<span class="sumnum"></span>
+      总价：<span class="sumprice"></span>&nbsp;元
+    </div>
+    <button class="accounts">去结算</button>
+  </div>
+  <script src="./js/total.js"></script> 
+</body>
+
+</html>

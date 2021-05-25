@@ -1,0 +1,166 @@
+.cartul {
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 50px;
+ } 
+
+.cartul li {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100px;
+  margin-left: 0;
+  border-bottom: 1px solid #333;
+}
+
+.cartul span {
+  display: inline-block;
+}
+
+.cartul input {
+  display: inline-block;
+  margin: 45px 10px 0 25px;
+}
+
+.cartul img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 20px 20px 0 40px;
+}
+
+.cartul .descontent{
+  display: flex !important;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 50px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 80px;
+  margin: 0;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.cartul .title {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.cartul .info {
+  font-size: 12px;
+  color: rgb(155, 154, 154);
+}
+
+.cartul .price {
+  width: 150px;
+  margin: 30px 5px 0 20px;
+  font-style: 13px !important;
+}
+
+.cartul .count {
+  display: flex;
+  justify-content: space-around;
+  width: 60px;
+  height: 20px;
+  margin: 20px 100px 0 10px;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+}
+
+.cartul .dec,
+.cartul .add {
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid rgb(190, 187, 187);
+}
+
+.cartul .dec,
+.cartul .add {
+  background-color: #ccc;
+}
+
+.cartul .num {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+}
+
+.cartul .delete,
+.cartul .delall,
+.cartul .accounts {
+  border: none;
+  background-color: #fff;
+  width: 50px;
+  height: 25px;
+  margin-top: 50px;
+  color: #333;
+}
+
+.cartul .accounts,
+.cartul .delall {
+  color: #fff;
+  font-size: 15px;
+}
+
+.bottom {
+  width: 1000px;
+  height: 80px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.bottomright {
+  display: flex;
+  justify-content: start;
+  padding: 5px 0;
+  margin-left: 200px;
+}
+
+.delall {
+  width: 80px;
+  margin: 0 100px;
+}
+
+.accounts {
+  display: block;
+  border: none;
+  width: 60px;
+  height: 30px;
+  margin-left: 100px;
+  color: #fff;
+  background-color: rgba(226,35,26, .85);
+}
+
+.sumnum {
+  margin-right: 10px;
+}
+
+.chooseall{
+  line-height: 100%;
+  padding: 5px;
+}  
+
+.botinput{
+  margin-right: 10px;
+}
+
+.choosedcolor{
+  background-color: rgba(255,244,232);
+}
+
+

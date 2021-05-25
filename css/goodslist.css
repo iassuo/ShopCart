@@ -1,0 +1,262 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 1000px;
+  height: auto;
+  margin: 30px auto 50px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 32%;
+  height: 150px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.item:last-child,
+.content :nth-child(3) {
+  margin-right: 0;
+}
+
+.item_left,
+.item_right {
+  padding: 5px;
+  box-sizing: border-box;
+  width: 150px;
+  text-align: left;
+}
+
+.item_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_left img {
+  display: block;
+  width: 100%;
+  line-height: 150px;
+}
+
+.item_left img:hover {
+  animation: imgmove .5s;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+@keyframes imgmove {
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.item_right {
+  width: 170px;
+}
+
+.title {
+  font-size: 16px;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 12px;
+  color: rgb(156, 152, 152);
+  margin-bottom: 10px;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.price {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.currprice {
+  color: red;
+  margin-right: 15px;
+}
+
+.preprice {
+  color: #ccc;
+}
+
+.btn2 {
+  display: block;
+  border: none;
+  width: 100px;
+  height: 30px;
+  background-color: rgba(225,37,27);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn2:hover {
+  cursor: pointer;
+}
+
+.navigation {
+  width: 1000px;
+  height: 30px;
+}
+
+.pagination {
+  width: 100%;
+  height: 100%;
+  padding: 0 650px;
+  box-sizing: border-box;
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+
+li {
+  width: 60px;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+  text-align: center;
+}
+
+#lipage {
+  width: 20px;
+}
+
+#asideli {
+  background-color: rgb(226, 223, 223);
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+#total {
+  width: 80px;
+  border: none;
+}
+
+#topage {
+  display: flex;
+  width: 120px;
+  line-height: 23px;
+  border: none;
+}
+
+#topageipt{
+  width: 50px;
+  padding:  0 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+}
+
+.currpage{
+  background-color: rgb(230,67,71);
+}
+
+/* 轮播图 */
+* {
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration: none;
+}
+
+.swiperarea{
+  width: 1000px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+
+.swiperbox {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+}            
+
+.wrap {
+  position: absolute;
+  width: 4200px;
+  height: 400px;
+  z-index: 1;
+  /* transition: all 1.5s; */
+}
+
+.swiperbox .wrap img {
+  float: left;
+  width: 600px;
+  height: 400px;
+}
+
+.swiperbox .buttons {
+  position: absolute;
+  bottom:20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  margin: auto;
+  z-index: 2;
+  text-align: center;
+}
+
+.swiperbox .buttons span {
+  margin-left: 5px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(202, 199, 199, 0.6);
+  text-align: center;
+  color:transparent;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.swiperbox .buttons span.on{
+  background-color: rgba(226,35,26, .85);
+}
+
+.swiperbox .arrow {
+  position: absolute;
+  top: 40%;
+  color: #fff;
+  padding:0px 10px;
+  border-radius: 50%;
+  font-size: 30px;
+  z-index: 2;
+  display: none;
+}
+.swiperbox .arrow_left {
+  left: 10px;
+}
+.swiperbox .arrow_right {
+  right: 10px;
+}
+.swiperbox:hover .arrow {
+  display: block;
+}
+.swiperbox .arrow:hover {
+  background-color: rgba(0,0,0,0.2);
+}
